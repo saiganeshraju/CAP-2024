@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner n = new Scanner(System.in);
+        String name1 = n.next();
+        String name2 = n.nextLine();
+        ArrayList<String> l1 = new ArrayList<>();
+        ArrayList<String> l2 = new ArrayList<>();
+        for (int i = 0 ; i < name1.length() ; i ++){
+            l1.add(name1.substring(i,i+1));
+        }
+        for (int i = 0 ; i < name2.length() ; i ++){
+            l2.add(name2.substring(i,i+1));
+        }
+        for(String i : l2){
+            if (l1.contains(i)) l1.remove(i);
+        } 
+        for(String i : l1){
+        System.out.print(i);
+        }
+        }
+}
