@@ -1,0 +1,7 @@
+//Write your code here
+      HashSet<String> unique = new HashSet();
+      for (int i =0; i<t ; i++){
+          String str = pair_left[i] +" "+ pair_right[i];
+          unique.add(str);
+          System.out.println(unique.size());
+      }
